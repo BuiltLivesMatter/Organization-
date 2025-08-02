@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reaction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>body{font-family:sans-serif;text-align:center;padding:1rem;}canvas{max-width:100%;}</style>
+</head>
+<body>
+  <h1>Reaction</h1>
+  <div id="game"><p id='msg'>Click to start</p><script>let t=0;msg.onclick=()=>{{msg.innerText='Wait...';setTimeout(()=>{{t=Date.now();msg.innerText='NOW!';msg.onclick=()=>msg.innerText='Time: '+(Date.now()-t)+'ms'}},Math.random()*2000+1000);}};</script></div>
+</body>
+</html>

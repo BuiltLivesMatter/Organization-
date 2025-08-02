@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maze</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>body{font-family:sans-serif;text-align:center;padding:1rem;}canvas{max-width:100%;}</style>
+</head>
+<body>
+  <h1>Maze</h1>
+  <div id="game"><canvas id='maze' width='300' height='300'></canvas><script>var c=document.getElementById('maze'),x=c.getContext('2d');x.fillStyle='#000';x.fillRect(10,10,280,10);x.fillRect(10,280,280,10);x.fillRect(10,10,10,280);x.fillRect(280,10,10,280);x.fillStyle='green';x.fillRect(30,30,20,20);</script></div>
+</body>
+</html>
